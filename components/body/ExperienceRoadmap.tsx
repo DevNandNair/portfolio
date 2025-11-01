@@ -53,6 +53,23 @@ const experiences: Experience[] = [
     color: "cyan"
   },
   {
+  id: 4,
+  type: "project",
+  title: "Full-Stack CRUD Applications",
+  organization: "Personal Projects",
+  location: "React + Django + MongoDB",
+  duration: "2023",
+  description: [
+    "Developed 14+ CRUD applications covering various domains and use cases",
+    "Built with React frontend, Django backend, and MongoDB databases",
+    "Implemented core features including Create, Read, Update, and Delete operations with form validation",
+    "Designed responsive user interfaces using Bootstrap framework"
+  ],
+  technologies: ["React", "Django", "MongoDB",  "Bootstrap", "Python"],
+  icon: <FaCode size={20} />,
+  color: "pink"
+},
+  {
     id: 6,
     type: "project",
     title: "Anime Recommendation System",
@@ -74,7 +91,7 @@ const experiences: Experience[] = [
     title: "Confera - Conference Booking System",
     organization: "Personal Project",
     location: "Django",
-    duration: "2024",
+    duration: "2022",
     description: [
       "Developed a scheduling system for booking conference halls",
       "Implemented admin controls, attendee management, and slot automation",

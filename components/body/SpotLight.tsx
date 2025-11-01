@@ -8,6 +8,19 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaArrowDown } from "react-icons/fa";
 export default function SpotLight() {
   return (
     <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-black">
+       <motion.div
+        className="absolute top-8 right-8 z-20"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5 }}
+      >
+        <div className="flex items-center gap-2">
+          <FaEnvelope size={16} className="text-gray-500" />
+          <span className="text-gray-500 text-sm">
+            devnandnair2@gmail.com
+          </span>
+        </div>
+      </motion.div>
       
       {/* Animated gradient orbs background */}
       <div aria-hidden="true" className="absolute inset-0 overflow-hidden">
@@ -112,14 +125,9 @@ export default function SpotLight() {
                 View My Work
                 <FaArrowDown className="group-hover:translate-y-1 transition-transform" size={14} />
               </a> */}
-              <a
-                href="mailto:devnandnair2@gmail.com"
-                className="px-8 py-3.5 rounded-full bg-gray-800/50 text-white font-semibold border border-gray-700 hover:border-gray-600 hover:bg-gray-800 transition-all duration-300 hover:scale-105 flex items-center gap-2"
-              >
-                <FaEnvelope size={16} />
-                Get in Touch
-              </a>
+           
             </motion.div>
+            
 
             {/* Social Links */}
             <motion.div 
