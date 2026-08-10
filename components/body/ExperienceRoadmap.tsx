@@ -20,6 +20,22 @@ const experiences: Experience[] = [
   {
     id: 1,
     type: "work",
+    title: "Associate Software Engineer (Frontend)",
+    organization: "Transight",
+    location: "On-site",
+    duration: "Feb 2026 – Present",
+    description: [
+      "Develop frontend applications using Next.js, focusing on responsive UIs and performance optimization",
+      "Integrate RESTful APIs and collaborate with backend teams for seamless data integration",
+      "Utilize modern tools like Tailwind CSS and Git for efficient development"
+    ],
+    technologies: ["Next.js", "Tailwind CSS", "Git"],
+    icon: <FaBriefcase size={20} />,
+    color: "cyan"
+  },
+  {
+    id: 2,
+    type: "work",
     title: "Front-End Developer",
     organization: "WoodenClouds IT and Services",
     location: "Hybrid",
@@ -34,7 +50,6 @@ const experiences: Experience[] = [
     icon: <FaBriefcase size={20} />,
     color: "cyan"
   },
- 
   {
     id: 3,
     type: "work",
@@ -53,24 +68,24 @@ const experiences: Experience[] = [
     color: "cyan"
   },
   {
-  id: 4,
-  type: "project",
-  title: "Full-Stack CRUD Applications",
-  organization: "Personal Projects",
-  location: "React + Django + MongoDB",
-  duration: "2023",
-  description: [
-    "Developed 14+ CRUD applications covering various domains and use cases",
-    "Built with React frontend, Django backend, and MongoDB databases",
-    "Implemented core features including Create, Read, Update, and Delete operations with form validation",
-    "Designed responsive user interfaces using Bootstrap framework"
-  ],
-  technologies: ["React", "Django", "MongoDB",  "Bootstrap", "Python"],
-  icon: <FaCode size={20} />,
-  color: "pink"
-},
+    id: 4,
+    type: "project",
+    title: "Full-Stack CRUD Applications",
+    organization: "Personal Projects",
+    location: "React + Django + MongoDB",
+    duration: "2023",
+    description: [
+      "Developed 14+ CRUD applications covering various domains and use cases",
+      "Built with React frontend, Django backend, and MongoDB databases",
+      "Implemented core features including Create, Read, Update, and Delete operations with form validation",
+      "Designed responsive user interfaces using Bootstrap framework"
+    ],
+    technologies: ["React", "Django", "MongoDB", "Bootstrap", "Python"],
+    icon: <FaCode size={20} />,
+    color: "pink"
+  },
   {
-    id: 6,
+    id: 5,
     type: "project",
     title: "Anime Recommendation System",
     organization: "Personal Project",
@@ -86,7 +101,7 @@ const experiences: Experience[] = [
     color: "pink"
   },
   {
-    id: 4,
+    id: 6,
     type: "project",
     title: "Confera - Conference Booking System",
     organization: "Personal Project",
@@ -101,8 +116,8 @@ const experiences: Experience[] = [
     icon: <FaCode size={20} />,
     color: "pink"
   },
-   {
-    id: 2,
+  {
+    id: 7,
     type: "education",
     title: "MCA - Masters in Computer Applications",
     organization: "Marian College, Kuttikkanam",
@@ -118,7 +133,7 @@ const experiences: Experience[] = [
     color: "purple"
   },
   {
-    id: 5,
+    id: 8,
     type: "education",
     title: "BCA - Bachelors in Computer Applications",
     organization: "Catholicate College, Pathanamthitta",
@@ -133,8 +148,8 @@ const experiences: Experience[] = [
     icon: <FaGraduationCap size={20} />,
     color: "purple"
   },
-  
 ];
+
 
 const ExperienceRoadmap: React.FC = () => {
   const [activeTab, setActiveTab] = useState<"all" | "work" | "education" | "project">("all");
